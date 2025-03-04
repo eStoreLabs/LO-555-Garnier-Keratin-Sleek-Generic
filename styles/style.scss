@@ -63,14 +63,15 @@ $red: #B33B18;
 
 
         &__wrapper {
-            background-size: 0;
-            background-position: center;
-            background-repeat: no-repeat;
             margin: 0;
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .es-kv__img-desktop {
+                display: none;
+            }
         }
 
         &__branding {
@@ -604,18 +605,30 @@ $red: #B33B18;
     @media (min-width: 393px) {
         .es-kv {
             &__wrapper {
-                background-size: cover;
-                height: 400px;
+                .es-kv__img-desktop {
+                    display: block;
+                }
             }
+
             &__img {
                 display: none;
             }
+
             &__branding {
-                left: 0;
+                width: 22%;
             }
+
             &__textCtn {
-                top: 50%;
                 padding: 10px;
+            }
+
+            &__branding .es-kv__text {
+                font-size: 18px;
+
+            }
+
+            &__branding .es-kv__text span {
+                font-size: 26px;
             }
         }
 
@@ -625,17 +638,16 @@ $red: #B33B18;
     }
 
     @media (min-width: 500px) {
-        
+
         .es-kv__textCtn {
-            background-size: 0;
-            padding: 0;
-            top: 50%;
             left: 25px;
+            top: 25%;
             color: $white;
-            font-size: 25px;
+            font-size: 22px;
             font-weight: 700;
             line-height: 1.2;
         }
+
         .es-products {
             &__single-1 {
                 left: 18%;
@@ -656,6 +668,21 @@ $red: #B33B18;
     }
 
     @media (min-width: 600px) {
+        .es-kv {
+            &__branding .es-kv__text {
+                font-size: 26px;
+
+            }
+
+            &__branding .es-kv__text span {
+                font-size: 34px;
+            }
+
+            &__textCtn {
+                font-size: 25px;
+            }
+        }
+
         .es-products {
             &__img {
                 width: 600px;
@@ -746,35 +773,23 @@ $red: #B33B18;
 
     @media (min-width: 768px) {
         .es-kv {
-
-            &__wrapper {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-
             &__textCtn {
-                position: static;
-                margin-top: 190px;
-                margin-bottom: 40px;
-                margin-left: 40px;
                 color: $white;
-                font-size: 40px;
-                line-height: 1.3;
+                font-size: 38px;
+                line-height: 1.2;
             }
 
             &__branding {
                 max-width: unset;
-                width: 30%;
-                left: 0;
+                width: 22%;
             }
 
             &__branding .es-kv__text {
-                font-size: 40px;
+                font-size: 34px;
             }
 
             &__branding .es-kv__text span {
-                font-size: 55px;
+                font-size: 50px;
             }
         }
 
@@ -908,6 +923,16 @@ $red: #B33B18;
     }
 
     @media (min-width: 990px) {
+        .es-kv {
+            &__branding .es-kv__text {
+                font-size: 38px;
+            }
+
+            &__branding .es-kv__text span {
+                font-size: 52px;
+            }
+        }
+
         .es-benefits {
             padding: 0 32px 32px 32px;
         }

@@ -48,14 +48,14 @@
   color: #FFFFFF;
 }
 #es-garnier.es-garnier .es-kv__wrapper {
-  background-size: 0;
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#es-garnier.es-garnier .es-kv__wrapper .es-kv__img-desktop {
+  display: none;
 }
 #es-garnier.es-garnier .es-kv__branding {
   text-align: center;
@@ -482,19 +482,23 @@
   }
 }
 @media (min-width: 393px) {
-  #es-garnier.es-garnier .es-kv__wrapper {
-    background-size: cover;
-    height: 400px;
+  #es-garnier.es-garnier .es-kv__wrapper .es-kv__img-desktop {
+    display: block;
   }
   #es-garnier.es-garnier .es-kv__img {
     display: none;
   }
   #es-garnier.es-garnier .es-kv__branding {
-    left: 0;
+    width: 22%;
   }
   #es-garnier.es-garnier .es-kv__textCtn {
-    top: 50%;
     padding: 10px;
+  }
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text {
+    font-size: 18px;
+  }
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text span {
+    font-size: 26px;
   }
   #es-garnier.es-garnier .es-benefits__pill-wrapper {
     justify-content: center;
@@ -502,12 +506,10 @@
 }
 @media (min-width: 500px) {
   #es-garnier.es-garnier .es-kv__textCtn {
-    background-size: 0;
-    padding: 0;
-    top: 50%;
     left: 25px;
+    top: 25%;
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.2;
   }
@@ -525,6 +527,15 @@
   }
 }
 @media (min-width: 600px) {
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text {
+    font-size: 26px;
+  }
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text span {
+    font-size: 34px;
+  }
+  #es-garnier.es-garnier .es-kv__textCtn {
+    font-size: 25px;
+  }
   #es-garnier.es-garnier .es-products__img {
     width: 600px;
   }
@@ -592,30 +603,20 @@
   }
 }
 @media (min-width: 768px) {
-  #es-garnier.es-garnier .es-kv__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
   #es-garnier.es-garnier .es-kv__textCtn {
-    position: static;
-    margin-top: 190px;
-    margin-bottom: 40px;
-    margin-left: 40px;
     color: #FFFFFF;
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 38px;
+    line-height: 1.2;
   }
   #es-garnier.es-garnier .es-kv__branding {
     max-width: unset;
-    width: 30%;
-    left: 0;
+    width: 22%;
   }
   #es-garnier.es-garnier .es-kv__branding .es-kv__text {
-    font-size: 40px;
+    font-size: 34px;
   }
   #es-garnier.es-garnier .es-kv__branding .es-kv__text span {
-    font-size: 55px;
+    font-size: 50px;
   }
   #es-garnier.es-garnier .es-benefits {
     padding: 0 10px 32px 0;
@@ -714,6 +715,12 @@
   }
 }
 @media (min-width: 990px) {
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text {
+    font-size: 38px;
+  }
+  #es-garnier.es-garnier .es-kv__branding .es-kv__text span {
+    font-size: 52px;
+  }
   #es-garnier.es-garnier .es-benefits {
     padding: 0 32px 32px 32px;
   }
