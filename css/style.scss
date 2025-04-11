@@ -73,7 +73,17 @@ $red: #B33B18;
                 display: none;
             }
         }
-
+        &__packshotWrapper {
+          position: absolute;
+          bottom: 0;
+          left:5%;
+          width: 44%;
+        }
+        &__packshot {
+          display: block;
+          max-width: 100%;
+          margin: 0 auto;
+        }
         &__branding {
             text-align: center;
             position: absolute;
@@ -85,32 +95,43 @@ $red: #B33B18;
         &__branding {
             .es-kv__text {
                 text-transform: uppercase;
-                font-weight: 700;
-                font-size: 22px;
-                letter-spacing: -0.02em;
+                font-weight: 600;
+                font-size: 20px;
+
                 line-height: 0.9;
+                &--name {
+                  letter-spacing: -0.11em;
+                  font-size: 25px;
+                }
             }
 
             .es-kv__text span {
                 font-size: 28px;
+                font-weight: 700;
             }
         }
 
         &__logoCtn img {
             margin: auto;
+            padding-bottom: 7px;
         }
 
         &__textCtn {
-            background: rgb(222, 102, 34);
-            background: linear-gradient(90deg, rgba(222, 102, 34, 1) 0%, rgba(216, 98, 33, 1) 31%, rgba(179, 59, 24, 1) 50%, rgba(217, 100, 33, 1) 69%, rgba(217, 100, 33, 1) 100%);
             color: $white;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
-            line-height: 1.3;
+            line-height: 1.1;
             position: absolute;
+            text-transform: uppercase;
             left: 0;
             top: 7px;
-            padding: 7px;
+            &--row {
+              margin-bottom: 5px;
+              padding: 3px 7px 0 15px;
+              background: rgb(222, 102, 34);
+            background: linear-gradient(90deg, rgba(222, 102, 34, 1) 0%, rgba(216, 98, 33, 1) 31%, rgba(179, 59, 24, 1) 50%, rgba(217, 100, 33, 1) 69%, rgba(217, 100, 33, 1) 100%);
+            
+            }
         }
     }
 
@@ -587,22 +608,28 @@ $red: #B33B18;
             &__textCtn {
                 font-size: 18px;
                 top: 10px;
-                padding: 10px;
             }
 
             &__branding .es-kv__text {
-                font-size: 26px;
-
+                font-size: 22px;
+              &--name{
+                font-size: 27px;
+              }
             }
 
             &__branding .es-kv__text span {
-                font-size: 35px;
+                font-size: 30px;
             }
         }
 
     }
 
     @media (min-width: 393px) {
+      .es-benefits__pill-wrapper {
+          justify-content: center;
+      }
+  }
+    @media (min-width: 450px) {
         .es-kv {
             &__wrapper {
                 .es-kv__img-desktop {
@@ -613,35 +640,36 @@ $red: #B33B18;
             &__img {
                 display: none;
             }
-
+            &__packshotWrapper {
+              width: 30%;
+            }
             &__branding {
                 width: 22%;
+                
             }
 
             &__textCtn {
-                padding: 10px;
+
             }
 
             &__branding .es-kv__text {
-                font-size: 18px;
-
+                font-size: 17px;
+                &--name{
+                  font-size: 21px;
+                }
             }
 
             &__branding .es-kv__text span {
-                font-size: 26px;
+                font-size: 23px;
             }
         }
 
-        .es-benefits__pill-wrapper {
-            justify-content: center;
-        }
     }
 
     @media (min-width: 500px) {
 
         .es-kv__textCtn {
-            left: 25px;
-            top: 25%;
+            // top: 25%;
             color: $white;
             font-size: 22px;
             font-weight: 700;
@@ -670,12 +698,14 @@ $red: #B33B18;
     @media (min-width: 600px) {
         .es-kv {
             &__branding .es-kv__text {
-                font-size: 26px;
-
+                font-size: 22px;
+                &--name{
+                  font-size: 27px;
+                }
             }
 
             &__branding .es-kv__text span {
-                font-size: 34px;
+                font-size: 30px;
             }
 
             &__textCtn {
@@ -772,27 +802,6 @@ $red: #B33B18;
     }
 
     @media (min-width: 768px) {
-        .es-kv {
-            &__textCtn {
-                color: $white;
-                font-size: 38px;
-                line-height: 1.2;
-            }
-
-            &__branding {
-                max-width: unset;
-                width: 22%;
-            }
-
-            &__branding .es-kv__text {
-                font-size: 34px;
-            }
-
-            &__branding .es-kv__text span {
-                font-size: 50px;
-            }
-        }
-
         .es-benefits {
             padding: 0 10px 32px 0;
 
@@ -922,10 +931,38 @@ $red: #B33B18;
         }
     }
 
+    @media (min-width: 800px) {
+      .es-kv {
+        &__textCtn {
+            color: $white;
+            font-size: 38px;
+            line-height: 1.2;
+        }
+
+        &__branding {
+            max-width: unset;
+            width: 22%;
+        }
+
+        &__branding .es-kv__text {
+          font-size: 32px;
+          &--name{
+            font-size: 40px;
+          }
+      }
+
+        &__branding .es-kv__text span {
+            font-size: 44px;
+        }
+    }
+    }
     @media (min-width: 990px) {
         .es-kv {
             &__branding .es-kv__text {
                 font-size: 38px;
+                &--name{
+                  font-size: 48px;
+                }
             }
 
             &__branding .es-kv__text span {
